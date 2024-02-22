@@ -1,0 +1,350 @@
+@font-face {
+    font-family:GilroyBold;
+    src: url(./assets/credfonts/Gilroy-Bold.ttf);
+}
+@font-face {
+    font-family:GilroyRegular;
+    src: url(./assets/credfonts/Gilroy-Regular.ttf);
+}
+@font-face {
+    font-family:GilroySemiBold;
+    src: url(./assets/credfonts/Gilroy-SemiBold.ttf);
+}
+@font-face {
+    font-family:Font1;
+    src: url(./assets/credfonts/KFOlCnqEu92Fr1MmEU9fBBc4.ttf);
+}
+@font-face {
+    font-family:Font2;
+    src: url(./assets/credfonts/KFOmCnqEu92Fr1Mu4mxK.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection{
+    color: #000;
+    background-color: #fff;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+main{
+    /* background-color: blueviolet; */
+}
+nav{
+    width: 100%;    
+    height: 20vh;
+    font-family: GilroyBold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    background-color:#000;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+nav .rightpart{
+    display: flex;
+    gap: 50px;
+    margin-left: 40px;
+}
+nav img {
+    height: 12vh;
+    width: 60px;
+}
+.part1{
+    margin-top: -50px;
+    width: 100%;
+    height: 80vh;
+    background-color:#000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:2vh;
+}
+.part1 h1{
+    text-align: center;
+    font-size: 7vw;
+    font-family: GilroyBold;
+    text-align: center;
+}
+span{
+    /* display: flex; */
+    text-align: center;
+    padding: 5px 40px;
+    font-size: 60px;
+    font-family: GilroyBold;
+    color: #000;
+    background-color:#DC1D52;
+    border-radius: 50px;
+}
+.part1 p{
+    font-size: 1.6vw;
+    font-family: GilroyBold;
+    text-align: center;
+}
+.part1 button{
+    margin-top: 20px;
+    padding: 0.8vw 2.5vw;
+    font-size: 1.8vw;
+    border-radius: 50px;
+    font-family: GilroyBold;
+    background-color: #fff;
+    border-radius: 1px solid #000;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.8s;
+    cursor: pointer;
+}
+.part1 button:hover{
+    color: #fff;
+    background-color: transparent;
+    border: 1px  solid #fff;
+}
+.part2{
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 100%;
+    height: 125vh;
+    /* background-color:green; */
+    background-image: url(./assets/video-bg.jpeg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.part2 img{
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#imgthree{
+    position: absolute;
+    bottom: -50vh;
+    z-index: 5;
+}
+#imgtwo,#imgfour{
+    position: absolute;
+    z-index: 4;
+    bottom: -50vh;
+}
+#imgtwo{
+    left:20%;
+}
+#imgfour{
+    right:20%;
+}
+#imgone,#imgfive{
+    position: absolute;
+    z-index: 3;
+    bottom: -50vh;
+}
+#imgone{
+    left: 10%;
+}
+#imgfive{
+    right: 10%;
+}
+.part-same{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 20px 150px;
+}
+.part3{
+    background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/deserve-more-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.part-same h1{
+    font-size: 15vh;
+    font-family: GilroyBold;
+    line-height: 13vh;
+    /* text-transform: capitalize; */
+}
+.part-same h3{
+    font-size: 3vh;
+    font-family: GilroyBold;
+    line-height: 5vh;
+    margin-bottom: 25px;
+}
+.part-same p{
+    font-size: 2.5vh;
+    font-weight:100;
+    font-family: GilroyBold;
+    line-height: 2.5vh;
+    margin-bottom: 20px;
+}
+.part-same button{
+    padding: 0.8vw 2.5vw;
+    font-size: 1.8vw;
+    border-radius: 50px;
+    font-family: GilroyBold;
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.8s;
+    cursor: pointer;
+    color: #fff;
+}
+.part-same button:hover{
+    color: black;
+    background-color: white;
+    border: 1px  solid #fff;
+}
+.strip{
+    /* display: flex;
+    align-items: start; */
+    /* justify-content: column ; */
+    width: 1005px;
+    height: 25vh;
+    background-color: #fff;
+    padding: 0 10vh;
+    gap: 3vh;
+}
+.strip h3{
+    font-size: 1.3vw;
+    font-weight: 100;
+    font-family: GilroyBold;
+    margin:3vh 0.5vh ;
+}
+.strip img{
+    margin-top: 10px;
+    width: 90vw;
+}
+.part4{
+    background-image: url("https://web-images.credcdn.in/_next/assets/images/home-page/money-matters-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.part-same p{
+    font-weight: 5vh;
+}
+
+.part5{
+
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+.left-part5{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+}
+.scroll-txt{
+    bottom: 10%;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap:8vh;
+}
+.left-part5 p {
+    width: 80%;
+}
+
+.right-part5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 50%;
+    height: 100vh;
+    /* background-color: #DC1D52; */
+}
+#part5{
+    display: flex;
+    flex-direction: row;
+    padding: 0vw 0vw 0vw 8vw;
+    background-color: #000;
+
+}
+.phone{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 350px;
+    height: 92%;
+    border-radius: 40px;
+    border: 10px solid gray;
+    overflow:hidden ;
+    padding-bottom: 30px;
+    /* background-color: aqua; */
+}
+.phone-img{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 400%;
+    height: 100vh;
+    margin-left: -1vh;
+    
+}
+.phone img{
+    /* border-radius: 80px; */
+    width: 100%;
+    object-fit: cover;
+    
+}
+#scroll-1{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#scroll-2,#scroll-3,#scroll-4 {
+    opacity: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+.part6{
+    width: 100%;
+    height: 50vh;
+    /* background-color: #DC1D52; */
+    background-image: url(./assets/credimages/neopop-image-mock.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.part7{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("https://web-images.credcdn.in/_next/assets/images/home-page/security-bg.jpg");
+}
+.part7 p{
+    width: 70%;
+}
+.part8{
+    gap:15vw;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-image: url(./assets/credimages/trust-bg-mobile.jpg);
+}
+.part8 h1{
+    padding-top: 150px;
+    width: 200%;
+    font-size: 4vw;
+    line-height: 8vh;
+}
+.part8 p{
+    font-family:GilroyRegular;
+    width: 200%;
+    /* text-align: start; */
+}
